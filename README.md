@@ -49,7 +49,7 @@ No maps were generated as attackers were not able to access the subnet due to th
 
 ### Before Hardening
 
-Start Time 2024-09-10 10:52:42
+Start Time 2024-09-10 10:52:42 <br>
 End Time 2024-09-10 10:52:42
 
 | Metric                   | Count
@@ -62,7 +62,7 @@ End Time 2024-09-10 10:52:42
 
 ### After Hardening
 
-Start Time 2024-09-15 05:43:24
+Start Time 2024-09-15 05:43:24 <br>
 End Time 2024-09-16 05:43:24
 
 | Metric                   | Count
@@ -74,9 +74,9 @@ End Time 2024-09-16 05:43:24
 | AzureNetworkAnalytics_CL | 0
 
 ## Conclusion
-After securing the environment, the number of Security Events and and Incidents were drastically reduced. Although the system did receive 30 incidents (from the Custom alerts), I investigated the incidents to be a false positives. All of the 30 incidents were of the same "Possible Privilege Escalation (Azure Key Vault Critical Credential Retrieval or Update)" alert, triggered by the same IP (20.9.153.77). This IP links back to the Micrisoft Azure Data Center in region West-2 and is likely an internal service.
+After securing the environment, the number of Security Events and and Incidents were drastically reduced. Although the system did receive 30 incidents (from the Custom alerts), I investigated the incidents and found them all false positives. The 30 incidents triggered the same "Possible Privilege Escalation (Azure Key Vault Critical Credential Retrieval or Update)" alert, originating from the same IP (20.9.153.77). This IP links back to the Micrisoft Azure Data Center in region West-2 and is likely an internal service.
 
-A quick check into the LAW (Log Analytics Workspace) is that it is indeed an Audit Event triggered by an Azure Service.
+A quick check into the LAW (Log Analytics Workspace) shows that it is indeed an Audit Event triggered by an Azure Service.
 
 ![Incident Log](honeynet-soc-imgs/LAW-AKV.png)<br>
 
