@@ -34,6 +34,8 @@ To stay compliant with NIST 800-53 guidelines, Microsoft Defender for Cloud has 
 
 To bring the system up to standards against the "SC-7 Boundary Protection" standard, I attached a an NSG to the subnet containing all resources and configured the inbound rules to only allow traffic from my IP address.
 
+Private Endpoints were also created for the storage account and key vault, to remove their access from the public internet and make them only accesssible from within the subnet. 
+
 ## Attack Maps Before Hardening
 ![NSG Allowed Inbound Malicious Flows](honeynet-soc-imgs/nsg-malicious-allowed-in(before).png)<br>
 ![Linux Syslog Auth Failures](honeynet-soc-imgs/linux-ssh-auth-fail(before).png)<br>
