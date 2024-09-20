@@ -56,7 +56,7 @@ End Time 2024-09-10 10:52:42
 | ------------------------ | -----
 | SecurityEvent            | 40625
 | Syslog                   | 6336
-| SecurityAlert            | 237
+| SecurityAlert            | 6
 | SecurityIncident         | 238
 | AzureNetworkAnalytics_CL | 15039
 
