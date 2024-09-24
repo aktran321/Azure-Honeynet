@@ -74,7 +74,7 @@ End Time 2024-09-16 05:43:24
 | AzureNetworkAnalytics_CL | 0
 
 ## Conclusion
-After securing the environment, the number of Security Events and and Incidents were drastically reduced. Although the system did receive 30 incidents (from the Custom alerts), I investigated the incidents and found them all false positives. The 30 incidents triggered the same "Possible Privilege Escalation (Azure Key Vault Critical Credential Retrieval or Update)" alert, originating from the same IP (20.9.153.77). This IP links back to the Micrisoft Azure Data Center in region West-2 and is likely an internal service.
+After securing the environment, the number of Security Events and and Incidents were drastically reduced. Although the system did receive 30 incidents (from the Custom alerts), I investigated the incidents and found them all false positives. The 30 incidents triggered the same "Possible Privilege Escalation (Azure Key Vault Critical Credential Retrieval or Update)" alert, originating from the same IP (20.9.153.77). This IP links back to the Microsoft Azure Data Center in region West-2 and is likely an internal service.
 
 A quick check into the LAW (Log Analytics Workspace) shows that it is indeed an Audit Event triggered by an Azure Service.
 
