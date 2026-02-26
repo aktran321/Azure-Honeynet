@@ -32,7 +32,7 @@ The honeynet consists of:
 
 To stay compliant with NIST 800-53 guidelines, Microsoft Defender for Cloud has a "Regulatory Compliance" feature. There, you are able to see which guideline specifications your architecture complies or does not comply with.
 
-To bring the system up to standards against the "SC-7 Boundary Protection" standard, I attached a an NSG to the subnet containing all resources and configured the inbound rules to only allow traffic from my IP address.
+To bring the system up to standards against the "SC-7 Boundary Protection" standard, I attached an NSG to the subnet containing all resources and configured the inbound rules to only allow traffic from my IP address.
 
 Private Endpoints were also created for the storage account and key vault, to remove their access from the public internet and make them only accesssible from within the subnet. 
 
